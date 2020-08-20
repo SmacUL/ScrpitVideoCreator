@@ -13,7 +13,7 @@ class Picture:
     def __init__(self,
                  scripts,
                  mod=0,
-                 size=(1080, 80),
+                 size=(1920, 80),
                  fegColor=(255,255,255),
                  bkgColor=(0,0,0),
                  imagesPath='./images/',
