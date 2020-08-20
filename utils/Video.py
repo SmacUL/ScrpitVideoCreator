@@ -44,8 +44,11 @@ class Video:
                     video.write(scriptImage)
                 if i != (end - 1):
                     blankTime = self.__scripts[i+1][1] - self.__scripts[i][1] - self.__scripts[i][2]
-                    for c in range(int(self.__fps * blankTime / 1000)):
-                        video.write(bgkImage)
+                else:
+                    blankTime = 1000
+                for c in range(int(self.__fps * blankTime / 1000)):
+                    video.write(bgkImage)
+        video.release()
         video.release()
         cv2.destroyAllWindows()
 
