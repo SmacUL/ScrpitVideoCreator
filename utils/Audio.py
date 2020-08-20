@@ -92,6 +92,7 @@ class Audio:
                 else:
                     self.__scripts[i][1] = self.__scripts[i-1][1] + self.__scripts[i-1][2]
                 finalAudio += AudioSegment.from_mp3(self.__getAudioNameByIndex(i))
+        finalAudio += AudioSegment.silent(duration=1000)
         finalAudio.export(os.path.join(self.__medianPath, 'final.mp3'), format="mp3")
         # with open(os.path.join(self.__medianPath, 'final.mp3'), 'wb') as longAudio:
         #     if self.__mod == 0:
