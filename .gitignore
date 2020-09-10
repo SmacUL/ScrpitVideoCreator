@@ -1,3 +1,12 @@
 test.json
 history/*
 .idea/*
+audios/*.mp3
+images/*.png
+pictures/*.png
+videos/*.mp4
+clips/*.mp4
+median/*
+venv/*
+.DS_Store
+*/.DS_Store
